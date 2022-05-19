@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Meu Starter</string>
+    <string name="textviewmensagem">TextView</string>
+    <string name="textviewEndereco">TextView</string>
 </resources>
