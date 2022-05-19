@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewMensagemP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -15,16 +15,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEdereco" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEnd" />
 
     <TextView
-        android:id="@+id/textViewMensagem"
+        android:id="@+id/textViewNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
-        android:text="@string/textviewmensagem"
+        android:text="@string/textviewnome"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.012"
@@ -38,27 +38,29 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/textviewmensagem"
+        android:text="@string/editviewnome"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewMensagem"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMensagem" />
+        app:layout_constraintStart_toStartOf="@+id/textViewNome"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNome"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/textviewEndereco"
+        android:text="@string/textviewend"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/editTextNome"
         app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
 
     <EditText
-        android:id="@+id/editTextEdereco"
+        android:id="@+id/editTextEnd"
         android:layout_width="291dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -67,11 +69,11 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/textviewEndereco"
+        android:text="@string/editviewend"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/textViewEnd"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
