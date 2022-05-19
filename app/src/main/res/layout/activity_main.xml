@@ -15,16 +15,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEnd" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonMensagem" />
 
     <TextView
-        android:id="@+id/textViewNome"
+        android:id="@+id/nomeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/textviewnome"
+        android:layout_marginTop="32dp"
+        android:text="Nome:"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.012"
@@ -35,45 +35,57 @@
         android:id="@+id/editTextNome"
         android:layout_width="298dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="Digite seu nome aqui"
         android:inputType="textPersonName"
-        android:text="@string/editviewnome"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewNome"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNome"
+        app:layout_constraintStart_toStartOf="@+id/nomeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/nomeLabel"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:id="@+id/textViewEnd"
+        android:id="@+id/textViewStarterLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/textviewend"
+        android:layout_marginTop="32dp"
+        android:text="Starter:"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/editTextNome"
         app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
 
     <EditText
-        android:id="@+id/editTextEnd"
+        android:id="@+id/editTextStarter"
         android:layout_width="291dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="Digite seu Starter preferido"
         android:inputType="textPersonName"
-        android:text="@string/editviewend"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewEnd"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEnd" />
+        app:layout_constraintStart_toStartOf="@+id/textViewStarterLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStarterLabel" />
+
+    <Button
+        android:id="@+id/buttonMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="clicaBotaoMensagem"
+        android:text="Mudar mensagem"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStarter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
